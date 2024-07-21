@@ -5,7 +5,7 @@ import {
   getEmpDetails,
   updateEmpDetails,
 } from "../utilis/HandleEmp";
-import Navbar from "./Navbar";
+
 import Search from "./Search";
 
 const Employee = ({ admin }) => {
@@ -91,7 +91,7 @@ const Employee = ({ admin }) => {
 
   useEffect(() => {
     fetchToDos();
-  }, [shouldFetch]);
+  }, [shouldFetch || flag]);
 
   const handleDelete = async (empId) => {
     if (window.confirm("Are you sure?")) {
@@ -129,7 +129,7 @@ const Employee = ({ admin }) => {
             setCreate(!create)
           }}
         >
-          {flag ? "View Employee" : "Create an Employee"}
+          {flag ? "View Employee List" : "Create an Employee"}
         </button>
       </div>
       <br />
@@ -313,7 +313,7 @@ const Employee = ({ admin }) => {
                     <td className="p-3">{emp.f_Mobile}</td>
                     <td className="p-3">{emp.f_Designation}</td>
                     <td className="p-3">{emp.f_gender}</td>
-                    <td className="p-3">{emp.f_Course}</td>
+                    <td className="p-3">{emp.f_Course.slice(2,5)}</td>
                     <td className="p-3">{emp.f_Createdate}</td>
                     <td className="p-3">
                       <button

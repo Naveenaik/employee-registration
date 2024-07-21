@@ -10,8 +10,7 @@ import Cookie from 'js-cookie';
 
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import EmpList from "./Components/EmpList";
-import GetEmp from "./Components/GetEmp";
+
 import Employee from "./Components/Employee";
 import Layout from "./Components/Layout";
 

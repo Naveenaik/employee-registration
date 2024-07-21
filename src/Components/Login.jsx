@@ -9,10 +9,10 @@ const Login = ({ setLoginAdmin }) => {
   const navigate = useNavigate();
   return (
     <div>
-      <div className='bg-[#e5ee67] h-10' >Login Page</div>
+      <div className='flex justify-center h-10 font-bold text-2xl mt-10' >Login Page</div>
       
       <div className='flex justify-center'>
-      <div className=" md:w-1/3 max-w-sm mt-20">
+      <div className=" md:w-1/3 max-w-sm mt-10">
         <input
           className="text-sm w-full px-4 py-3 border border-solid border-gray-300 rounded outline-none"
           type="text"

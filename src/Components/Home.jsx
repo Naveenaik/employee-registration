@@ -6,14 +6,9 @@ const Home = ({admin}) => {
     <div>
         <div>
             <Navbar admin={admin}/>
-            {/* <ul>
-                <li>Home</li>
-                <li>Employee List</li>
-                <li>Admin name</li>
-                <li>Logout</li>
-            </ul> */}
+
         </div>
-        <div className='flex justify-center'>
+        <div className='mt-20 flex justify-center text-[#000] text-2xl font-bold'>
             Welcome to Admin panel
         </div>
     </div>
